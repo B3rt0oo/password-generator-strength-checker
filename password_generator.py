@@ -16,9 +16,9 @@ UPPERCASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 DIGITS = "0123456789"
 SYMBOLS = "!@#$%^&*()-_=+[]{}|;:,.<>?/"
 
-# --------------------------
+
 # Core Functions
-# --------------------------
+
 def generate_password(length=12, use_upper=True, use_digits=True, use_symbols=True):
     charset = LOWERCASE
     if use_upper: charset += UPPERCASE
@@ -61,9 +61,9 @@ def format_time(seconds):
     else:
         return f"{seconds/3.154e+12:.2f} millennia"
 
-# --------------------------
+
 # Plot Functions
-# --------------------------
+
 def plot_strength_gauge(entropy):
     thresholds = [28, 36, 60, 128]
     colors = ['red', 'orange', 'yellow', 'green', 'blue']
@@ -115,9 +115,9 @@ def plot_entropy_heatmap():
     plt.title('Password Entropy Heatmap')
     plt.show()
 
-# --------------------------
+
 # Main Program
-# --------------------------
+
 if __name__ == "__main__":
     print("=== Password Generator & Strength Checker ===")
     
